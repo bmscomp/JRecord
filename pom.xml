@@ -110,11 +110,9 @@
 	                    <include>**/zTest/**/*.java</include>
 	                    <!--include>**/Test*.java</include-->
 	                </includes>
-	           <!-- options to try to improve performance
-	                could try increasing forkcount to 2 or 4
-	                <forkCount>1</forkCount>
+	                <!-- Fork-based parallel execution (2 JVM forks for stability) -->
+	                <forkCount>2</forkCount>
        	 			<reuseForks>true</reuseForks>
-				-->
 	            </configuration>
 	        </plugin>
 			<plugin>
